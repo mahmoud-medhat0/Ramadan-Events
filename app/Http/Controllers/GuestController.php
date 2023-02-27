@@ -43,6 +43,10 @@ class GuestController extends Controller
             ]);
         }
         $recid = DB::table('answer_records')->latest('created_at')->get()[0]->id;
+        $answers = DB::table('questions')->where('id',$qid)->select('AnswersCount')->get()[0]->AnswersCount;
+        DB::table('questions')->where('id',$qid)->update([
+            'AnswersCount'=>$answers+1
+        ]);
         DB::table('answers')->insert([
             'name' => $request['name'],
             'number' => $request['number'],
