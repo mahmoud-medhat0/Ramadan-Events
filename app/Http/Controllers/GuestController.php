@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAnswer;
 use App\Models\guest;
 use Illuminate\Http\Request;
+use App\Rules\UniqueLastAnswer;
+use App\Http\Requests\StoreAnswer;
 use Illuminate\Support\Facades\DB;
 
 class GuestController extends Controller
@@ -42,6 +43,13 @@ class GuestController extends Controller
                 'question_id' => $qid
             ]);
         }
+        $validate = [
+            'name' => ['required','string'],
+            'number'=> ['required','regex:/^01[0-2,5]\d{8}$/',new UniqueLastAnswer],
+            'address'=> ['required','string'],
+            'answer'=> ['required','string']
+        ];
+        $request->validate($validate);
         $recid = DB::table('answer_records')->latest('created_at')->get()[0]->id;
         $answers = DB::table('questions')->where('id',$qid)->select('AnswersCount')->get()[0]->AnswersCount;
         DB::table('questions')->where('id',$qid)->update([

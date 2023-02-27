@@ -25,10 +25,6 @@ class StoreAnswer extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required','string'],
-            'number'=> ['required','regex:/^01[0-2,5]\d{8}$/',new UniqueLastAnswer],
-            'address'=> ['required','string'],
-            'answer'=> ['required','string']
         ];
     }
 }
