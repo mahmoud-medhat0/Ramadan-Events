@@ -1,0 +1,192 @@
+/* Get-Started */
+
+@media (max-width: 767px) {
+    .get-started {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+    }      
+}
+
+@media (max-width: 767px) {
+    .get-started .heading h2 {
+        font-size: 60px;
+        text-align: center;
+        padding-top: 160px;
+    }   
+}
+
+@media (max-width: 653px) {
+    .get-started .heading h2 {
+        font-size: 60px;
+        text-align: center;
+        padding-top: 225px;
+    }   
+}
+
+@media (max-width: 914px) {
+    .get-started .heading h2 {
+        font-size: 60px;
+        text-align: center;
+        padding-top: 180px;
+    }   
+}
+
+@media (max-width: 767px) {
+    .get-started .heading p {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 20px;
+    }   
+}
+
+@media (max-width: 767px) {
+    .get-started .cover-2 img {
+        width: 330px;
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 720px) {
+    .get-started .cover-2 img {
+        width: 330px;
+        margin-top: -80px;
+        margin-right: 84px;
+    }
+}
+
+@media (max-width: 653px) {
+    .get-started .cover-2 img {
+        width: 220px;
+        margin-top: -70px;
+        margin-right: 18px;    
+    }
+}
+
+@media (max-width: 914px) {
+    .get-started .cover-2 img {
+        width: 300px;
+        margin-top: -70px;
+        margin-right: 39px;    
+    }
+}
+
+@media (max-width: 767px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        top: 290px;
+        right: 20%;
+    }   
+}
+
+@media (max-width: 1199px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        right: -30%;
+    }   
+}
+
+@media (max-width: 1400px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        right: -20%;
+    }   
+}
+
+@media (max-width: 720px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        top: 290px;
+        right: 32%;
+    }   
+}
+
+@media (max-width: 653px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        top: 200px;
+        right: 9%;
+    }   
+}
+
+@media (max-width: 914px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        top: 285px;
+        right: 23%;
+    }   
+}
+
+@media (max-width: 1024px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        right: -14%;
+    }   
+}
+
+@media (max-height: 800px) {
+    .get-started .button .btn-1 {
+        position: absolute;
+        right: -9%;
+    }   
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        display: none;
+    }
+}
+
+/* Form */
+
+@media (max-width: 767px) {
+    .form {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 1199px) {
+    .form {
+        height: 75vh;
+    }      
+}
+
+@media (max-width: 1024px) {
+    .form {
+        height: auto;
+    }      
+}
+
+@media (max-width: 720px) {
+    .form {
+        height: auto;
+    }      
+}
+
+@media (max-height: 800px) {
+    .form {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .form input {
+        width: 85vw;
+    }
+}
+
+/* Form & Get-Started is End */
+
+/* Cover */
+
+@media (max-width: 767px) ,
+       (max-width: 1199px) {
+    .cover-1 {
+        display: none;
+    }
+}
+
+/* End of Cover */

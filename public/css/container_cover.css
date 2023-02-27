@@ -1,0 +1,611 @@
+/* ======= Container ======= */
+
+.container-cover {
+    position: relative;
+    text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    .container-cover {
+        display: none;
+    }
+} */
+
+/* ======= Cover ======= */
+
+.cover-1 {
+    width: 345px;
+    height: 345px;
+    background-image: url(../images/cover_2.png);
+    background-size: cover;
+    position: absolute;
+    top: 385px;
+    right: 215px;
+    transition: 0.7s;
+    z-index: 999;
+}
+
+/* ======= Moon ======= */
+
+.moon {
+    width: 145px;
+    height: 145px;
+    background-image: url(../images/moon.png);
+    background-size: cover;
+    position: absolute;
+    top: -35px;
+    left: 105px;
+    transition: 0.7s;
+}
+
+.moon:hover {
+    filter: drop-shadow(0px 6px 6px var(--light-color));
+    transform: scale(1.0);
+}
+
+@media (max-width: 768px) {
+    .moon {
+        left: -40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .moon {
+        left: -20px;
+    }
+}
+
+/* ======= Stars ======= */
+
+.stars {
+    transition: 0.7s;
+}
+
+.stars:hover {
+    filter: drop-shadow(0px 6px 6px var(--light-color));
+}
+
+.star-1 {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/star_1.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.star-1:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .star-1:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .star-1:nth-child(1) {
+        top: 950px;
+        left: 55px;
+    }
+}
+
+@media (max-height: 600px) {
+    .star-1:nth-child(1) {
+        top: 572px;
+        left: 15px;
+    }
+}
+
+.star-1:nth-child(2) {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 720px;
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .star-1:nth-child(2) {
+        top: 72.3rem;
+        left: 340px;
+    }
+}
+
+@media (max-width: 740px) {
+    .star-1:nth-child(2) {
+        width: 50px;
+        height: 50px;
+        top: 65.3rem;
+        left: 351px;
+    }
+}
+
+@media (max-width: 900px) {
+    .star-1:nth-child(2) {
+        top: 77.3rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .star-1:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .star-1:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .star-1:nth-child(2) {
+        top: 690px;
+    }
+}
+
+.star-1:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 300px;
+    right: 400px;
+}
+
+@media (max-width: 768px) {
+    .star-1:nth-child(3) {
+        display: none;
+    }
+}
+
+.star-1:nth-child(4) {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 800px;
+    left: 90px;
+}
+
+@media (max-width: 768px) {
+    .star-1:nth-child(4) {
+        top: 780px;
+        right: 316px;
+    }
+}
+
+@media (max-width: 900px) {
+    .star-1:nth-child(4) {
+        top: 825px;
+        right: 340px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .star-1:nth-child(4) {
+        top: 825px;
+        right: 75px;
+    }
+}
+
+@media (max-width: 720px) {
+    .star-1:nth-child(4) {
+        display: none;
+    }
+}
+
+.star-2 {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/star_2.png);
+    background-size: cover;
+    position: absolute;
+    top: 287px;
+    right: 170px;
+}
+
+@media (max-width: 1199px) {
+    .star-2 {
+        top: 315px;
+        right: 155px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .star-2 {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .star-2 {
+        top: 215px;
+        right: 155px;
+    }
+}
+
+.star-3 {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/star_3.png);
+    background-size: cover;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
+
+@media (max-width: 768px) {
+    .star-3 {
+        width: 80px;
+        height: 80px;
+        top: 50px;
+        right: -13px;
+    }
+}
+
+@media (max-width: 653px) {
+    .star-3 {
+        width: 80px;
+        height: 80px;
+        top: 45px;
+        right: -13px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .star-3 {
+        width: 80px;
+        height: 80px;
+        top: 40px;
+        right: -13px;
+    }
+}
+
+/* ======= lanterns ======= */
+
+.lantern-1 {
+    width: 170px;
+    height: 170px;
+    background-image: url(../images/lantern_1.png);
+    background-size: cover;
+    position: absolute;
+    top: 691px;
+    left: 285px;
+    transition: 0.7s;
+}
+
+@media (max-width: 1199px) {
+    .lantern-1 {
+        top: 791px;
+        z-index: 1;    
+    }
+}
+
+@media (max-width: 1024px) {
+    .lantern-1 {
+        top: 720px;
+        z-index: 1;    
+    }
+}
+
+@media (max-height: 600px) {
+    .lantern-1 {
+        top: 515px;
+        z-index: 1;    
+    }
+}
+
+@media (max-height: 800px) {
+    .lantern-1 {
+        top: 610px;
+        z-index: 1;    
+    }
+}
+
+.lantern-1:hover {
+    filter: drop-shadow(0px 6px 6px var(--light-color));
+}
+
+.lantern-5 {
+    width: 115px;
+    height: 115px;
+    background-image: url(../images/lantern_5.png);
+    background-size: cover;
+    position: absolute;
+    top: 675px;
+    right: 300px;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.lantern-5:hover {
+    filter: drop-shadow(0px 10px 10px var(--light-color));
+}
+
+@media (max-width: 1199px) {
+    .lantern-5 {
+        display: none;  
+    }
+}
+
+@media (max-width: 767px) {
+    .lantern-1,
+    .lantern-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .lantern-1,
+    .lantern-5 {
+        display: none;
+    }
+}
+
+/* ======= Stars & lanterns & Effects ======= */
+
+/* ======= Container ======= */
+
+.container-cover-2 {
+    position: relative;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container-cover-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-cover-2 {
+        display: block;
+    }
+}
+
+.stars .star-4 {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/star_1.png);
+    background-size: cover;
+    position: absolute;
+    /* top: 20px;
+    right: 10px; */
+}
+
+.stars .star-4:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+@media (max-width: 653px) {
+    .stars .star-4:nth-child(1) {
+        top: -10px;
+        right: -30px;
+    }
+}
+
+@media (max-height: 600px) {
+    .stars .star-4:nth-child(1) {
+        top: -135px;
+        left: -36px;
+    }
+}
+
+.stars .star-4:nth-child(2) {
+    position: absolute;
+    top: 620px;
+    left: 30px;
+}
+
+@media (max-width: 720px) {
+    .stars .star-4:nth-child(2) {
+        top: 427px;
+        left: 3px;
+    }
+}
+
+@media (max-width: 653px) {
+    .stars .star-4:nth-child(2) {
+        top: 467px;
+        left: -18px;
+    }
+}
+
+@media (max-width: 914px) {
+    .stars .star-4:nth-child(2) {
+        top: 477px;
+        left: -18px;
+    }
+}
+
+@media (max-height: 600px) {
+    .stars .star-4:nth-child(2) {
+        top: 332px;
+        left: 15px;
+    }
+}
+
+@media (max-height: 800px) {
+    .stars .star-4:nth-child(2) {
+        top: 500px;
+        left: 55px;
+    }
+}
+
+.stars .star-5 {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/star_2.png);
+    background-size: cover;
+    position: absolute;
+    top: 660px;
+}
+
+.stars .star-5:first-child {
+    position: absolute;
+    top: 420px;
+    left: 70px;
+}
+
+@media (max-width: 720px) {
+    .stars .star-5 {
+        top: 480px;
+        left: 415px;    
+    }
+}
+
+@media (max-height: 600px) {
+    .stars .star-5 {
+        top: 440px;
+    }
+}
+
+@media (max-height: 800px) {
+    .stars .star-5 {
+        top: 550px;
+    }
+}
+
+.stars .star-6 {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/star_3.png);
+    background-size: cover;
+    position: absolute;
+}
+
+.stars .lantern-6 {
+    background-image: url(../images/lantern_3.png);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 24px;
+    left: 45px;
+    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    .stars .lantern-6 {
+        top: 24px;
+        left: 25px;
+    }      
+}
+
+@media (max-width: 1024px) {
+    .stars .lantern-6 {
+        top: 24px;
+        left: 25px;
+    }      
+}
+
+@media (max-height: 800px) {
+    .stars .lantern-6 {
+        top: 24px;
+        left: 90px;
+    }      
+}
+
+.stars .lantern-7 {
+    background-image: url(../images/lantern_4.png);
+    background-size: cover;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 484px;
+    right: 85px;
+    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    .stars .lantern-7 {
+        top: 504px;
+        right: 45px;
+    }      
+}
+
+@media (max-width: 720px) {
+    .stars .lantern-6,
+    .stars .lantern-7 {
+        display: none;
+    }
+}
+
+@media (max-height: 600px) {
+    .stars .lantern-7 {
+        top: 330px;
+        right: 92px;
+    }      
+}
+
+@media (max-height: 800px) {
+    .stars .lantern-7 {
+        top: 390px;
+        right: 92px;
+    }      
+}
+
+/* ======= Stars & lanterns ======= */
+
+.done .star-5 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 300px;
+    left: 320px;
+}
+
+.done .star-4 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 130px;
+    right: 80px;
+}
+
+.done .star-6 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 840px;
+    left: 40px;
+}
+
+.lant {
+    transition: 0.5s;
+}
+
+.lant:hover {
+    filter: drop-shadow(0px 10px 10px var(--light-color));
+}
+
+.lant .lant-1 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 614px;
+    left: 400px;
+    z-index: 1;
+} 
+
+.lant .lant-2 {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 800px;
+    right: 100px;
+}
+
+.lant .lant-3 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 120px;
+    left: 70px;    
+}

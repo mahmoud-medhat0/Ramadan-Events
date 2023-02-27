@@ -1,0 +1,11 @@
+:root {
+    --main-color: #635a87;
+    --dark-color: #19132b;
+    --light-color: #393156;
+    --paragraph-color: #443d69;
+};
+
+/* .ball--1{ background-image: linear-gradient(to bottom , #923174, #635a87);}
+.ball--2{ background-image: linear-gradient(to bottom , #443d69, #B500F9);}
+.ball--3{ background-image: linear-gradient(to bottom , #393156, #CD5988);}
+.ball--4{ background-image: linear-gradient(to bottom , #19132b, #1E282F);} */
