@@ -105,7 +105,12 @@
                 </div>
                 <div class="title-heading">
                     <h2>مرحبا مره آخري</h2>
-                    <p>{{ $question }}</p>
+                    <p>@if ($question==null)
+                        {{ "لايوجد اسئله حتى الان" }}
+                        @else
+                        {{ $question }}
+                        @endif
+                    </p>
                 </div>
                 <div class="form-group">
                     <form action="{{ route('QuestionStore') }}" method="post">
