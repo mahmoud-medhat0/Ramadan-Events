@@ -35,8 +35,15 @@ class GuestController extends Controller
      */
     public function store(StoreAnswer $request)
     {
-        $latestrecid = DB::table('answer_records')->latest('created_at')->get()[0];
+        $latestrecid = DB::table('answer_records')->latest('created_at')->get();
         $qid = DB::table('questions')->latest('created_at')->get()[0]->id;
+        if ($latestrecid == '[]') {
+            DB::table('answer_records')->insert([
+                'date' => date('y-m-d'),
+                'question_id' => $qid
+            ]);
+        }
+        $latestrecid = DB::table('answer_records')->latest('created_at')->get()[0];
         if ($latestrecid->date != date('Y-m-d')) {
             DB::table('answer_records')->insert([
                 'date' => date('y-m-d'),
@@ -44,16 +51,16 @@ class GuestController extends Controller
             ]);
         }
         $validate = [
-            'name' => ['required','string'],
-            'number'=> ['required','regex:/^01[0-2,5]\d{8}$/',new UniqueLastAnswer],
-            'address'=> ['required','string'],
-            'answer'=> ['required','string']
+            'name' => ['required', 'string'],
+            'number' => ['required', 'regex:/^01[0-2,5]\d{8}$/', new UniqueLastAnswer],
+            'address' => ['required', 'string'],
+            'answer' => ['required', 'string']
         ];
         $request->validate($validate);
         $recid = DB::table('answer_records')->latest('created_at')->get()[0]->id;
-        $answers = DB::table('questions')->where('id',$qid)->select('AnswersCount')->get()[0]->AnswersCount;
-        DB::table('questions')->where('id',$qid)->update([
-            'AnswersCount'=>$answers+1
+        $answers = DB::table('questions')->where('id', $qid)->select('AnswersCount')->get()[0]->AnswersCount;
+        DB::table('questions')->where('id', $qid)->update([
+            'AnswersCount' => $answers + 1
         ]);
         DB::table('answers')->insert([
             'name' => $request['name'],
