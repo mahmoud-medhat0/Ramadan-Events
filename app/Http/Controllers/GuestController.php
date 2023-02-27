@@ -16,8 +16,13 @@ class GuestController extends Controller
      */
     public function index()
     {
-        $question = DB::table('questions')->select('question')->latest('created_at')->get()[0]->question;
-        return view('index')->with('question',$question);
+        $question = DB::table('questions')->select('question')->latest('created_at')->get();
+        if ($question == '[]') {
+            $question = null;
+        } else {
+            $question = $question[0]->question;
+        }
+        return view('index')->with('question', $question);
     }
 
 
@@ -33,18 +38,18 @@ class GuestController extends Controller
         $qid = DB::table('questions')->latest('created_at')->get()[0]->id;
         if ($latestrecid->date != date('Y-m-d')) {
             DB::table('answer_records')->insert([
-                'date'=>date('y-m-d'),
-                'question_id'=>$qid
+                'date' => date('y-m-d'),
+                'question_id' => $qid
             ]);
         }
         $recid = DB::table('answer_records')->latest('created_at')->get()[0]->id;
         DB::table('answers')->insert([
-            'name'=>$request['name'],
-            'number'=> $request['number'],
-            'address'=>$request['address'],
-            'answer'=>$request['answer'],
-            'answer_rec_id'=>$recid,
-            'question_id'=>$qid
+            'name' => $request['name'],
+            'number' => $request['number'],
+            'address' => $request['address'],
+            'answer' => $request['answer'],
+            'answer_rec_id' => $recid,
+            'question_id' => $qid
         ]);
         return view('done');
     }
