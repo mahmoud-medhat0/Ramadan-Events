@@ -86,10 +86,6 @@
                     <img src="{{ asset('images/cover.png') }}" title="يمكنك الإجابة علي الإسئلة!!" alt="pro">
                 </div>
             </div>
-            <div class="footer">
-                <h5>© Egyptian House of Representatives 2023 - All rights reserved.</h5>
-                <h5>Designed By : MrSolom . ⚚#9090 | Backend by: hetlar#0001</h5>
-            </div>
             <!-- Form Quest -->
             <div id="form" class="form">
                 <div class="container-cover-2">
@@ -105,7 +101,8 @@
                 </div>
                 <div class="title-heading">
                     <h2>مرحبا مره آخري</h2>
-                    <p>@if ($question==null)
+                    <p>
+                        @if ($question==null)
                         {{ "لايوجد اسئله حتى الان" }}
                         @else
                         {{ $question }}
@@ -115,51 +112,62 @@
                 <div class="form-group">
                     <form action="{{ route('QuestionStore') }}" method="post">
                         @csrf
+                        @error('name')
+                        <br>
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                        @error('number')
+                        <br>
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                        @error('address')
+                        <br>
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
+                        @error('answer')
+                        <br>
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        <br>
+                        @enderror
                         <!-- Name-Input -->
                         <label for="name"></label>
-                        <input id="name" type="text" required class="name-input" name="name" placeholder="أكتب اسمك"
+                        <input id="name" type="text" class="name-input" name="name" placeholder="أكتب اسمك"
                             autocomplete="off">
-                        @error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
                         <!-- Number-Input -->
                         <label for="number"></label>
-                        <input id="number" type="number" required class="number-input" name="number"
-                            placeholder="أكتب رقمك" autocomplete="off">
-                        @error('number')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
+                        <input id="number" type="number" class="number-input" name="number" placeholder="أكتب رقمك"
+                            autocomplete="off">
                         <!-- Addreas-Input -->
-                        <label for="address"></label>
-                        <input id="address" type="text" required class="addreas-input" name="address"
-                            placeholder="أكتب عنوانك" autocomplete="off">
-                        @error('address')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
+                        <label for="addreas"></label>
+                        <input id="addreas" type="text" class="addreas-input" name="address" placeholder="أكتب عنوانك"
+                            autocomplete="off">
                         <!-- Answer-Input -->
                         <label for="answer"></label>
-                        <input id="answer" type="text" required class="answer-input" name="answer"
-                            placeholder="أكتب الإجابة" autocomplete="off">
-                        @error('answer')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
+                        <input id="answer" type="text" class="answer-input" name="answer" placeholder="أكتب الإجابة"
+                            autocomplete="off">
+                        <!-- Notice -->
                         <!-- Button -->
                         <div class="button">
                             <div class="wrapper">
-                                <button type="submit" id="btn" class="btn"><span>إرسـال</span></button>
+                                <button id="btn" class="btn"><span>إرسـال</span></button>
                             </div>
                         </div>
                         <!-- <a href="#" class="button-submit">Send <i class="fa-solid fa-search"></i> </a>                            -->
                     </form>
                 </div>
+            </div>
+            <div class="footer">
+                {{-- <h5 class="copy">© Egyptian House of Representatives 2023 - All rights reserved.</h5> --}}
+                <h5><img src="{{ asset('images/zenon-soft.png') }}">Designed By : MrSolom . ⚚#9090 | Backend by:
+                    hetlar#0001</h5>
             </div>
         </div>
     </div>
