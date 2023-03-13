@@ -74,7 +74,7 @@
             <div id="started" class="get-started">
                 <div class="heading">
                     <h2>مرحبا بك!</h2>
-                    <p>مسابقة <span>رمضان</span> لشهر رمضان المبارك ! ماذا تنتظر ..</p>                    <!-- Button -->
+                    <p>مسابقة <span>النائب أشرف امين</span> لشهر رمضان المبارك ! ماذا تنتظر ..</p>
                     <div class="button">
                         <div class="wrapper">
                             <a id="btn" class="btn-1" href="#form"><span>جرب الآن</span></a>
