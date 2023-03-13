@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فعالية مجلس النواب الرمضانية</title>
+    <title>مسابقة النائب أشرف امين</title>
     <link rel="shortcut icon" href="{{ asset('images/cover.png') }}" type="image/x-icon">
     <!-- Fontasome Library -->
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
@@ -74,8 +74,7 @@
             <div id="started" class="get-started">
                 <div class="heading">
                     <h2>مرحبا بك!</h2>
-                    <p>مسابقة <span>رمضان</span> للإسئلة الإسلامية! ماذا تنتظر ..</p>
-                    <!-- Button -->
+                    <p>مسابقة <span>رمضان</span> لشهر رمضان المبارك ! ماذا تنتظر ..</p>                    <!-- Button -->
                     <div class="button">
                         <div class="wrapper">
                             <a id="btn" class="btn-1" href="#form"><span>جرب الآن</span></a>
@@ -109,9 +108,18 @@
                         @endif
                     </p>
                 </div>
-                @if (Session::has('errors'))
-                <p id="notice" class="alert">بعض الخانات فارغة! او بها خطأ!</p>
-                @endif
+                @error('name')
+                <p id="notice" class="alert">{{ $message }}</p>
+                @enderror
+                @error('number')
+                <p id="notice" class="alert">{{ $message }}</p>
+                @enderror
+                @error('address')
+                <p id="notice" class="alert">{{ $message }}</p>
+                @enderror
+                @error('answer')
+                <p id="notice" class="alert">{{ $message }}</p>
+                @enderror
                 <div class="form-group">
                     <form action="{{ route('QuestionStore') }}" method="post">
                         @csrf

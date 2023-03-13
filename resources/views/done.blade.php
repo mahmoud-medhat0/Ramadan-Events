@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فعالية مجلس النواب الرمضانية | تم تسجيل الإجابة</title>
+    <title>مسابقة النائب أشرف امين | تم تسجيل الإجابة</title>
     <link rel="shortcut icon" href="{{ asset('images/cover.png') }}" type="image/x-icon">
     <!-- Fontasome Library -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -64,7 +64,7 @@
                 <!-- Button -->
                 <div class="button">
                     <div class="wrapper">
-                        <a id="btn" class="btn" href="index.html"><span>رجوع</span></a>
+                        <a id="btn" class="btn" href="{{ route('home') }}"><span>رجوع</span></a>
                     </div>
                 </div>
             </div>
