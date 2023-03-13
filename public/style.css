@@ -475,8 +475,8 @@ input:active {
 }
 
 .cover img {
-    width: 700px;
-    height: 700px;
+    width: 350px;
+    height: 364px;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -491,9 +491,11 @@ input:active {
     transform: translate(-50%, -50%);
 }
 
-.thanks h2 {
-    font-size: 28px;
-    color: #777;
+.thanks {
+    width: 98%;
+    top: 80%;
+    left: 55%;
+    transform: translate(-50%, -50%);
 }
 
 .lant img {
