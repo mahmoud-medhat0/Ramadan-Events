@@ -72,8 +72,4 @@ class GuestController extends Controller
         ]);
         return view('done');
     }
-    public function done()
-    {
-        return view('done');
-    }
 }
