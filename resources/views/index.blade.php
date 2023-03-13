@@ -151,9 +151,8 @@
                 </div>
             </div>
             <div class="footer">
-                {{-- <h5 class="copy">© Egyptian House of Representatives 2023 - All rights reserved.</h5> --}}
-                <h5><img src="{{ asset('images/zenon-soft.png') }}">Designed By : MrSolom . ⚚#9090 | Backend by:
-                    hetlar#0001</h5>
+                <h5 class="copy">© Egyptian House of Representatives 2023 - All rights reserved.</h5>
+                <h5><img src="{{ asset('images/zenon-soft.png') }}">Designed By : MrSolom .| Backend by: Mahmoud Medhat Farouk</h5>
             </div>
         </div>
     </div>
