@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::controller(GuestController::class)->middleware(['SiteActive'])->group(function (){
-    Route::get('/','index');
+    Route::get('/','index')->name('home');
+    Route::get('done','done')->name('done');
     Route::post('store','store')->name('QuestionStore');
 });

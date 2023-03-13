@@ -72,49 +72,8 @@ class GuestController extends Controller
         ]);
         return view('done');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\guest  $guest
-     * @return \Illuminate\Http\Response
-     */
-    public function show(guest $guest)
+    public function done()
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\guest  $guest
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(guest $guest)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\guest  $guest
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, guest $guest)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\guest  $guest
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(guest $guest)
-    {
-        //
+        return view('done');
     }
 }
