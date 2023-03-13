@@ -28,12 +28,12 @@ body {
 body::-moz-focus-inner {
     color: var(--dark-color);
 }
-  
+
 body::-webkit-scrollbar {
     width: 0.8em;
     background-color: var(--dark-color);
 }
-  
+
 body::-webkit-scrollbar-thumb {
     background-color: var(--light-color);
     box-shadow: 0px 0px 30px 30px var(--light-color);
@@ -55,21 +55,27 @@ ul {
     min-height: 97px;
 }
 
+
 /* LAG */
+
 @media (max-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
 
+
 /* MED */
+
 @media (max-width: 992px) {
     .container {
         width: 970px;
     }
 }
 
+
 /* SML */
+
 @media (max-width: 768px) {
     .container {
         width: 425px;
@@ -78,6 +84,7 @@ ul {
 
 
 /* End Globel Rules */
+
 
 /* Start of Preload */
 
@@ -108,14 +115,14 @@ ul {
     position: relative;
 }
 
-.loader:before ,
+.loader:before,
 .loader:after {
     content: '';
     width: 45px;
     height: 45px;
     display: block;
     position: relative;
-    margin: 10px auto ;
+    margin: 10px auto;
     border-radius: 50%;
     background-color: #fff;
     animation: left 1s infinite ease-in-out;
@@ -127,24 +134,25 @@ ul {
 }
 
 @keyframes right {
-    0% , 
+    0%,
     100% {
-        transform: translate(-15px) 
+        transform: translate(-15px)
     }
-    50% { 
-        transform: translate(15px) 
+    50% {
+        transform: translate(15px)
     }
 }
 
 @keyframes left {
-    0%, 
-    100% { 
-        transform: translate(15px) 
+    0%,
+    100% {
+        transform: translate(15px)
     }
-    50% { 
-        transform: translate(-15px) 
+    50% {
+        transform: translate(-15px)
     }
 }
+
 
 /* End of Preload */
 
@@ -189,12 +197,12 @@ ul {
 }
 
 .alert {
-    background-color: var(--light-color);
-    padding: 5px;
-    color: #777;
+    background-color: #610000;
+    padding: 16px;
+    color: #ffffff;
     margin-top: 15px;
     right: 315px;
-    position: absolute;
+    position: center;
     bottom: 400px;
     border-radius: 8px 0px 8px 8px;
 }
@@ -206,8 +214,8 @@ ul {
 }
 
 .heading .wrapper {
-	height: 100%;
-	background-color: var(--light-color);
+    height: 100%;
+    background-color: var(--light-color);
     margin-top: 10px;
 }
 
@@ -215,54 +223,54 @@ ul {
     margin-right: 86px;
     width: 100px;
     height: 45px;
-	color: var(--main-color);
-	text-decoration: none;
-	border: 3px solid var(--main-color);
-	font-family: 'Tajawal-2';
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 40px;
-	letter-spacing: 1.8px;
+    color: var(--main-color);
+    text-decoration: none;
+    border: 3px solid var(--main-color);
+    font-family: 'Tajawal-2';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1.8px;
     padding-bottom: 10px;
-	position: absolute;
-	top: 50%;
-	right: -25%;
+    position: absolute;
+    top: 50%;
+    right: -25%;
     text-align: center;
-	transform: translate(-50%,-50%);
-	overflow: hidden;
-    border-radius: 12px 0 12px 12px; 
-	transition: all 0.5s;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 12px 0 12px 12px;
+    transition: all 0.5s;
 }
 
 .btn-1:before {
-	content: "";
-	position: absolute;
-	width: 320px;
-	height: 320px;
-	border-radius: 140px;
-	background-color: var(--light-color);
-	top: 70px;
-	left: 50%;
-	animation: wave 5s infinite linear;
-	transition: all 1s;
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 140px;
+    background-color: var(--light-color);
+    top: 70px;
+    left: 50%;
+    animation: wave 5s infinite linear;
+    transition: all 1s;
 }
 
 @keyframes wave {
-	0% {
+    0% {
         transform: translateX(-50%) rotate(0deg);
-	} 
-	100% {
+    }
+    100% {
         transform: translateX(-50%) rotate(360deg);
-	}
+    }
 }
 
 .btn-1:hover {
-	color: #d1a1ff;
-    border-radius: 12px 12px 12px 0; 
+    color: #d1a1ff;
+    border-radius: 12px 12px 12px 0;
 }
 
 .btn-1:hover:before {
-	top: 25px;
+    top: 25px;
 }
 
 .btn-1 span {
@@ -270,7 +278,6 @@ ul {
     position: relative;
     z-index: 9999;
 }
-
 
 .get-started .cover-2 img {
     width: 620px;
@@ -281,7 +288,7 @@ ul {
 .get-started .cover-2 img:hover {
     animation-timing-function: ease;
     transition-duration: 0.3s;
-    transition: 1.7s; 
+    transition: 1.7s;
 }
 
 .footer {
@@ -310,7 +317,10 @@ ul {
     right: 310px;
     position: absolute;
 }
+
+
 /* End of Landing */
+
 
 /* Start of Form */
 
@@ -372,9 +382,9 @@ input {
 
 input:focus,
 input:active {
-  border: none;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
 .button {
@@ -384,58 +394,60 @@ input:active {
 }
 
 .form-group .wrapper {
-	height: 100%;
-	background-color: var(--light-color);
+    height: 100%;
+    background-color: var(--light-color);
 }
 
 .btn {
     width: 120px;
     height: 50px;
-	color: var(--main-color);
-	text-decoration: none;
-	border: 3px solid var(--main-color);
-	border-radius: 18px;
-	font-family: 'Tajawal-2';
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 40px;
-	letter-spacing: 2px;
-	padding: 1px 5px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+    color: var(--main-color);
+    text-decoration: none;
+    border: 3px solid var(--main-color);
+    border-radius: 18px;
+    font-family: 'Tajawal-2';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding: 1px 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     text-align: center;
-	transform: translate(-50%,-50%);
-	overflow: hidden;
-	transition: all 0.3s;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 .btn:before {
-	content: "";
-	position: absolute;
-	width: 320px;
-	height: 320px;
-	border-radius: 140px;
-	background-color: var(--light-color);
-	top: 70px;
-	left: 50%;
-	animation: wave 5s infinite linear;
-	transition: all 1s;
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 140px;
+    background-color: var(--light-color);
+    top: 70px;
+    left: 50%;
+    animation: wave 5s infinite linear;
+    transition: all 1s;
 }
 
 @keyframes wave {
-	0%{transform: translateX(-50%) rotate(0deg);
-	} 
-	100%{transform: translateX(-50%) rotate(360deg);
-	}
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
 }
 
 .btn:hover {
-	color: #d1a1ff;
+    color: #d1a1ff;
 }
 
 .btn:hover:before {
-	top: 25px;
+    top: 25px;
 }
 
 .btn span {
@@ -443,7 +455,9 @@ input:active {
     z-index: 9999;
 }
 
+
 /* End of Form */
+
 
 /* Start of Done */
 
@@ -490,5 +504,6 @@ input:active {
     left: 0;
     transform: translateY(-50%);
 }
+
 
 /* End of Done */

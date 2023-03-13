@@ -109,34 +109,12 @@
                         @endif
                     </p>
                 </div>
+                @if (Session::has('errors'))
+                <p id="notice" class="alert">بعض الخانات فارغة! او بها خطأ!</p>
+                @endif
                 <div class="form-group">
                     <form action="{{ route('QuestionStore') }}" method="post">
                         @csrf
-                        @error('name')
-                        <br>
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                        @error('number')
-                        <br>
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                        @error('address')
-                        <br>
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                        @error('answer')
-                        <br>
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        <br>
-                        @enderror
                         <!-- Name-Input -->
                         <label for="name"></label>
                         <input id="name" type="text" class="name-input" name="name" placeholder="أكتب اسمك"

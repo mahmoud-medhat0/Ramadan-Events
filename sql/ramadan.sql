@@ -19,16 +19,16 @@ CREATE TABLE IF NOT EXISTS `activation` (
   `active` tinyint(1) DEFAULT NULL COMMENT '0=>inactive ,1=>active'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ramadan.activation: ~1 rows (approximately)
+-- Dumping data for table ramadan.activation: ~0 rows (approximately)
 INSERT INTO `activation` (`active`) VALUES
-	(1);
+	(0);
 
 -- Dumping structure for table ramadan.admins
 CREATE TABLE IF NOT EXISTS `admins` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
@@ -42,10 +42,10 @@ INSERT INTO `admins` (`id`, `name`, `email`, `password`, `created_at`, `updated_
 -- Dumping structure for table ramadan.answers
 CREATE TABLE IF NOT EXISTS `answers` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `number` char(11) NOT NULL DEFAULT '',
-  `address` varchar(100) NOT NULL,
-  `answer` varchar(500) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `number` char(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+  `address` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `answer` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `answer_rec_id` int DEFAULT NULL,
   `question_id` int NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -84,7 +84,7 @@ INSERT INTO `answer_records` (`id`, `date`, `question_id`, `created_at`) VALUES
 -- Dumping structure for table ramadan.questions
 CREATE TABLE IF NOT EXISTS `questions` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `question` varchar(1000) NOT NULL,
+  `question` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `AnswersCount` int NOT NULL DEFAULT '0',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
