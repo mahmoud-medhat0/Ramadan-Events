@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فعالية مجلس النواب الرمضانية</title>
-    <link rel="shortcut icon" href="{{ asset('images/ramadan_icon.svg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/cover.png') }}" type="image/x-icon">
     <!-- Fontasome Library -->
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
     <!-- Container Cover -->

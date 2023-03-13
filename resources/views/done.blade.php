@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فعالية مجلس النواب الرمضانية | تم تسجيل الإجابة</title>
-    <link rel="shortcut icon" href="images/ramadan_icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/cover.png') }}" type="image/x-icon">
     <!-- Fontasome Library -->
-    <link rel="stylesheet" href="css/all.min.css">  
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- Container Cover -->
     <link rel="stylesheet" href="css/container_cover.css">
     <!-- Desgin System 4 Colors -->
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
 <!-- === Preloader Start === -->
 <!-- <div id="preloader">
     <div class="main">
@@ -75,8 +75,8 @@
     <!-- Scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/validator.min.js"></script> 
-    <script src="js/scripts.js"></script> 
+    <script src="js/validator.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/owl-carousel.js"></script>
     <script src="js/scrollreveal.min.js"></script>
