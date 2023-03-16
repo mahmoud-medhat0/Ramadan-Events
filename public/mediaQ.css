@@ -124,6 +124,13 @@
         height: 460px;
         margin-left: -25px;
     }
+
+    .get-started{
+        display: grid;
+        grid-template-columns: auto;
+        height: 50vh;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -162,7 +169,7 @@
         height: 45px;
         right: 20%;
         margin-bottom: 20px;
-        margin-right: 7px;
+        margin-right: 37px;
     }
 
     .title-heading h2 {
@@ -220,6 +227,10 @@
     .thanks h2 {
         font-size: 21px;
     }
+
+    .container-cover{
+        width: 85%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -260,6 +271,10 @@
 
     .form {
         margin-left: -1%;
+    }
+
+    .container{
+        padding: 0;
     }
 }
 

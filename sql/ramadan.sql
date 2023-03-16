@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`email`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ramadan.admins: ~0 rows (approximately)
 INSERT INTO `admins` (`id`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `answers` (
   KEY `FK_answers_answers_record` (`answer_rec_id`),
   CONSTRAINT `FK__questions` FOREIGN KEY (`question_id`) REFERENCES `questions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_answers_answers_record` FOREIGN KEY (`answer_rec_id`) REFERENCES `answer_records` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ramadan.answers: ~3 rows (approximately)
 INSERT INTO `answers` (`id`, `name`, `number`, `address`, `answer`, `answer_rec_id`, `question_id`, `created_at`) VALUES
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `answer_records` (
   UNIQUE KEY `date` (`date`),
   KEY `FK_answers_record_questions` (`question_id`),
   CONSTRAINT `FK_answers_record_questions` FOREIGN KEY (`question_id`) REFERENCES `questions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ramadan.answer_records: ~3 rows (approximately)
 INSERT INTO `answer_records` (`id`, `date`, `question_id`, `created_at`) VALUES
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `questions` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ramadan.questions: ~0 rows (approximately)
 INSERT INTO `questions` (`id`, `question`, `AnswersCount`, `created_at`, `updated_at`) VALUES

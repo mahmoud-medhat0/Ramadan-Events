@@ -53,36 +53,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     min-height: 97px;
+    width: 100%;
 }
-
-
-/* LAG */
-
-@media (max-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-
-/* MED */
-
-@media (max-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-
-/* SML */
-
-@media (max-width: 768px) {
-    .container {
-        width: 425px;
-    }
-}
-
-
 /* End Globel Rules */
 
 
@@ -159,6 +131,7 @@ ul {
 .body-page {
     text-align: center;
     position: relative;
+    width: 97%;
 }
 
 .get-started {
@@ -234,7 +207,7 @@ ul {
     padding-bottom: 10px;
     position: absolute;
     top: 50%;
-    right: -25%;
+    right: -19%;
     text-align: center;
     transform: translate(-50%, -50%);
     overflow: hidden;
@@ -315,7 +288,6 @@ ul {
     width: 20px;
     bottom: 15px;
     right: 310px;
-    position: absolute;
 }
 
 
@@ -404,7 +376,7 @@ input:active {
     color: var(--main-color);
     text-decoration: none;
     border: 3px solid var(--main-color);
-    border-radius: 18px;
+    border-radius: 18px 0 18px 18px;
     font-family: 'Tajawal-2';
     font-weight: 600;
     font-size: 20px;
@@ -417,7 +389,13 @@ input:active {
     text-align: center;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.5s;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border-radius: 18px 18px 18px 0;
 }
 
 .btn:before {

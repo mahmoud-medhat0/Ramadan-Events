@@ -146,13 +146,16 @@
                                 <button id="btn" class="btn"><span>إرسـال</span></button>
                             </div>
                         </div>
-                        <!-- <a href="#" class="button-submit">Send <i class="fa-solid fa-search"></i> </a>                            -->
+                        <!-- <a href="#" class="button-submit">Send <i class="fa-solid fa-search"></i> </a> -->
                     </form>
                 </div>
             </div>
             <div class="footer">
                 <h5 class="copy">© Egyptian House of Representatives 2023 - All rights reserved.</h5>
-                <h5><img src="{{ asset('images/zenon-soft.png') }}">Designed By : MrSolom .| Backend by: Mahmoud Medhat Farouk</h5>
+                <span>
+                    <img src="{{ asset('images/zenon-soft.png') }}">
+                    <h5>Designed By : MrSolom .| Backend by: Mahmoud Medhat Farouk</h5>
+                </span>
             </div>
         </div>
     </div>
