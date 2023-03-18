@@ -80,6 +80,9 @@
                             <a id="btn" class="btn-1" href="#form"><span>جرب الآن</span></a>
                         </div>
                     </div>
+                    <div class="res-btn">
+                        <a href="#form">جرب الأن</a>
+                    </div>
                 </div>
                 <div class="cover-2">
                     <img src="{{ asset('images/cover.png') }}" title="يمكنك الإجابة علي الإسئلة!!" alt="pro">

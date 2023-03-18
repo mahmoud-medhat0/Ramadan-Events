@@ -284,6 +284,12 @@ ul {
     color: var(--main-color);
 }
 
+.footer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer img {
     width: 20px;
     bottom: 15px;
@@ -409,6 +415,10 @@ input:active {
     left: 50%;
     animation: wave 5s infinite linear;
     transition: all 1s;
+}
+
+.get-started .res-btn{
+    display: none;
 }
 
 @keyframes wave {
