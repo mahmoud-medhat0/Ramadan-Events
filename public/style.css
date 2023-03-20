@@ -221,7 +221,7 @@ ul {
     width: 320px;
     height: 320px;
     border-radius: 140px;
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
     top: 70px;
     left: 50%;
     animation: wave 5s infinite linear;
@@ -342,7 +342,7 @@ input {
     font-size: 16px;
     border-radius: 4px;
     margin-top: 20px;
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
     font-family: 'Tajawal-2';
     text-align: right;
     padding: 5px 10px;
@@ -373,7 +373,7 @@ input:active {
 
 .form-group .wrapper {
     height: 100%;
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
 }
 
 .btn {
@@ -410,7 +410,7 @@ input:active {
     width: 320px;
     height: 320px;
     border-radius: 140px;
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
     top: 70px;
     left: 50%;
     animation: wave 5s infinite linear;
@@ -495,5 +495,9 @@ input:active {
     transform: translateY(-50%);
 }
 
+
+.form input{
+    background-color: var(--light-color);
+}
 
 /* End of Done */
