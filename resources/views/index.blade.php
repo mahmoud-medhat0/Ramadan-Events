@@ -154,11 +154,7 @@
                 </div>
             </div>
             <div class="footer">
-                <h5 class="copy">© Egyptian House of Representatives 2023 - All rights reserved.</h5>
-                <span>
-                    <img src="{{ asset('images/zenon-soft.png') }}">
-                    <h5>Designed By : MrSolom .| Backend by: Mahmoud Medhat Farouk</h5>
-                </span>
+                <h5 class="copy"><img src="{{asset('images/zenon-soft.png')}}">©<a href="https://zenonsoftware.com"> Zenon Software </a>  جميع الحقوق محفوظة  </h5>
             </div>
         </div>
     </div>

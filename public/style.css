@@ -269,7 +269,7 @@ ul {
     direction: ltr;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -284,16 +284,20 @@ ul {
     color: var(--main-color);
 }
 
-.footer span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer h5 a{
+    text-decoration: none;
+    color: rgb(0,97,201);
+    transition: 0.5s;
+}
+
+.footer h5 a:hover{
+    color: rgb(0, 79, 164);
 }
 
 .footer img {
     width: 33px;
-    bottom: 15px;
-    right: 310px;
+    margin-bottom: -10px;
+    margin-left: -5px;
 }
 
 

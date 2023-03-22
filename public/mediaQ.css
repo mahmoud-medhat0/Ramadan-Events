@@ -152,6 +152,7 @@
         display: grid;
         grid-template-columns: auto;
         height: 50vh;
+        padding-left: 18px;
     }
 
     .get-started .heading {
@@ -200,6 +201,10 @@
         margin-top: 50px;
         width: 105%;
         height: 100%;
+    }
+
+    .form-group form{
+        padding-left: 15px;
     }
 
     input {
@@ -343,12 +348,13 @@
 
     .form {
         margin-left: 5%;
-        height: 105vh;
+        height: 90vh;
     }
 
     .form-group {
         margin-top: 20px;
     }
+
 
     .footer h5 {
         margin-bottom: 5px;
@@ -431,7 +437,7 @@
 
     .form {
         margin-left: 5%;
-        height: 105vh;
+        height: 90vh;
     }
 
     .form-group {
